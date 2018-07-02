@@ -1,0 +1,39 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Cervolab</title>
+      <meta name="author" content="Pierre Jarriges">
+      <meta name="keywords" content="maze,game,Prism13,fanzine,webgame,minijeu,labyrinthe,car,voiture,chevreuil">
+      <meta name="description" content="minijeu labyrinthe voiture">
+    <link rel="stylesheet" href="style.css">
+      
+    <script language="javascript" type="text/javascript" src="p5.min.js"></script>
+      
+    <script language="javascript" type="text/javascript" src="p5.dom.js"></script>
+      
+    <script language="javascript" type="text/javascript" src="p5.play.js"></script>
+      
+   <script src="level1.js" id="levels"></script>
+        
+  </head>
+  <body>
+    <div class="container" id="interlevels">
+    <span id="title" class="container">
+      <i>CERVOLAB</i></span><span id="level">level 1</span>
+    <div id="playground" class="container"></div>
+    <div id="instructions" class="container">
+      Dirige la voiture avec les flèches de ton clavier. <br/>Attention de ne pas heurter un chevreuil !
+      </div>
+        <div id="diffButtons">
+            Difficulté : 
+        <button class ="button" id="easy" type="button" name="selector" onclick="easy()">FACILE</button>
+          <button class="button" id="medium" type="button" name="selector" onclick="medium()">NORMAL</button>
+          <button class="button" id="hard" type="button" name="selector" onclick="hard()">DIFFICILE</button>
+            <audio id="soundtrack" loop controls> <source src="song1.mp3" type="audio/mpeg"></audio>
+            </div>
+    </div>
+      
+  </body>
+</html>
